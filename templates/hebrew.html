@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лексическая типология</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+	</header>
+	<h1>База древнееврейских глаголов поля <i>падать</i></h1>
+	<form action='/process_data'>
+		<table class="search" align="center">
+			<tbody>
+				<tr>
+                    <td>Поиск по фрейму:</td>
+					<td>Поиск по значению:</td>
+					<td>Поиск по метафоре:</td>
+					<td>Поиск по породе:</td>
+					<td>Поиск по грамматическому значению:</td>
+				</tr>
+				<tr>
+                    <td><select name='frame'>
+                        <option></option>
+                        {% for frame in frames %}
+						    <option value="{{ frame[0] }}">{{ frame[0] }}</option>
+						{% endfor %}
+					</select></td>
+					<td><select name='meaning'>
+                        <option></option>
+                        {% for meaning in meanings %}
+						    <option value="{{ meaning[0] }}">{{ meaning[0] }}</option>
+						{% endfor %}
+					</select></td>
+					<td><select name='metaphor'>
+                        <option></option>
+                        {% for metaphor in metaphors %}
+						    <option value="{{ metaphor[0] }}">{{ metaphor[0] }}</option>
+						{% endfor %}
+					</select></td>
+					<td><select name='verbform'>
+						<option></option>
+                        {% for verbform in verbforms %}
+						    <option>{{ verbform[0] }}</option>
+						{% endfor %}
+						</select></td>
+					<td><textarea name='grammar'></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="button" align="center">
+            <tr>
+                <td><input class='calc-button' type='submit' value='Искать'></td>
+                <td><input class='calc-button' type='reset' value='Очистить'></td>
+            </tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лексическая типология</title>
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+	<header></header>
+	<h2>Результаты поиска</h2>
+	<br>
+	<ol>
+        {% for example in results %}
+            <li class='example'>
+                <p class='source'>Источник: {{example.source}}</p>
+			    <p class='hebrew'>Оригинал: {{ example.hebrew }}</p>
+			    <p class='russian'>Синодальный текст: {{ example.russian }}</p>
+            </li>
+        {% endfor %}
+	</ol>
+</body>
+</html>
