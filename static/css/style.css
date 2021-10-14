@@ -1,0 +1,88 @@
+body{
+	background-color:#FAEBD7;
+	padding: -10px;
+}
+header{
+	height:180px;
+	background-image: url('./hebrew.jpg') ;
+	width:100%
+	background-position: center 50% 50%;
+}
+h1{
+	text-align:center;
+	margin-top:40px;
+	color: #CD853F
+}
+
+.search{
+	background-color: #DEB887;
+	border: 1px solid black;
+	margin-top: 40px;
+	height: 200px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align:center;
+	width:50%;
+	background-position: center 50% 50%;
+}
+td{
+	height: 15px;
+}
+
+textarea{
+	width:400px;
+	height:15px;
+}
+
+select{
+	height:20px;
+}
+
+ol{
+	margin-left:40px;
+	padding-bottom:40px;
+}
+.source{
+	font-weight:bold;
+}
+
+.hebrew{
+	padding-left:20px;
+}
+
+.russian{
+	padding-left:20px;
+	font-style:italic;
+}
+
+h2{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.calc-button {
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #ffe7cc !important;
+    color: #0a0705 !important;
+    border: 2px solid #daa67b !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    padding: 8px 37px !important;
+    transition: all 1.2s ease !important;
+}
+.calc-button:hover{
+    text-decoration: none !important;
+    background-color: #ffe1a4 !important;
+    color: #7c6b45 !important;
+    border-color: #ffba5e !important;
+}
+
+.button{
+	margin-top: 10px;
+	background-color:rgba(0, 0, 0, 0);
+}
+
+
